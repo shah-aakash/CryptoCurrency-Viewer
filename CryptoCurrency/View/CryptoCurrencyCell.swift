@@ -28,12 +28,14 @@ class CryptoCurrencyCell: UITableViewCell {
 //        }
 //    }
     
-    var model: CryptoCellModel! {
+    var model: CryptoCellViewModel! {
         didSet {
             currencyName.text = model.currencyName
             currencyPrice.text = model.currencyPrice
             currency24h.text = model.currency24h
             currency7d.text = model.currency7d
+            currency24h.textColor = model.currency24hTextColor
+            currency7d.textColor = model.currency7dTextColor
         }
     }
    
